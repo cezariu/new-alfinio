@@ -3,71 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./packages/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Alfinio And Penta</title>
+    <title>Welcome to Alfinio VIlla & Penta Apartments</title>
+    <!-- Poppins google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- bootstrap css  link  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- custom css  link  -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="body">
-    <div class="container text-white">
-      <section class="my-5">
-        <div class="flex-row">
-          <h1 class="text-center mb-2">Welcome to</h1>
-          <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <img
-                src="./images/alfinio/alfinio.png"
-                class="img-fluid top-logo col-2"
-                alt="Alfinio Logo"
-              />
-              <p class="d-inline col-1">&</p>
-              <img
-                src="./images/penta/penta.png"
-                class="img-fluid top-logo col-2"
-                alt="Penta Logo"
-              />
+  <body>
+    <!-- welcome page part start -->
+    <section id="welcome" class="vh-100 position-relative">
+      <!-- desktop menu  -->
+      <div class="nav-content position-absolute d-none d-lg-block">
+        <ul class="d-flex flex-lg-column p-0 m-0 h-100 align-items-center">
+          <li class="mx-4 mx-lg-0 mt-lg-4"><a class="fw-normal text-white d-flex" href="#">Facebook</a></li>
+          <li class="mx-4 mx-lg-0 flex-fill"><a class="fw-normal text-white d-flex pe-lg-4" href="#">Instagram</a></li>
+          <li class="d-flex">
+            <a class="fw-normal text-white d-flex align-items-center" href="#">Contact - <img src="./image/what's-app.svg" alt="what's-app.svg" class="ms-1 img-fluid" /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- mobile menu  -->
+      <div class="nav-content-mobile border-bottom position-absolute w-100 d-block d-lg-none">
+        <ul class="p-0 m-0 align-items-center d-flex align-items-center h-100">
+          <li class="mr-2"><a class="pr-3 fw-normal text-white" href="#">LinkedIn</a></li>
+          <li class="mx-2 flex-fill"><a class="px-3 fw-normal text-white" href="#">Instagram</a></li>
+          <li>
+            <a class="fw-normal text-white d-flex" href="https://web.whatsapp.com/send?text=Buna%20ziua!&phone=+40722326694"><span class="d-md-block d-none">+40 722 326 694</span> <img src="./image/what's-app.svg" alt="what's-app.svg" class="ms-2 img-fluid" /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- main content part html start -->
+      <div class="main-content position-relative h-100">
+        <div class="main-content-item align-items-lg-center h-100 d-flex">
+          <div class="row m-auto align-items-center">
+            <div class="col-md-12 col-lg-6">
+              <div class="main-content-text mb-md-5 mb-lg-0 pt-4 pt-md-0">
+                <h1 class="mb-md-4 mb-lg-3">Welcome to</h1>
+                <h2 class="mb-md-4 mb-lg-3">Alfinio VIlla & Penta Apartments</h2>
+                <p class="text-white pb-md-5 pb-lg-0">O fereastră către liniștea și frumusețea naturii, unde timpul stă în loc și sufletul se găsește în armonie.</p>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="villa-option text-center">
+                <div class="alfinio villa-option-item mb-md-4 mb-5">
+                  <a href="./alfinio/alfinio.html">
+                    <div class="villa-img position-relative">
+                      <img src="./image/alfinio-villa.png" alt="alfinio-villa.png" class="img-fluid villa" />
+                      <div class="villa-logo position-absolute top-100 start-50 translate-middle">
+                        <img src="./image/alfinio-villa-logo.png" alt="alfinio-villa-logo" class="img-fluid" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="penta villa-option-item pt-lg-4 pt-xl-5 pb-xl-5 pb-lg-4">
+                  <a href="./penta/penta.html">
+                    <div class="villa-img position-relative pt-lg-5">
+                      <img src="./image/penta-apartments.jpeg" alt="alfinio-villa.png" class="img-fluid villa" />
+                      <div class="villa-logo position-absolute top-100 start-50 translate-middle">
+                        <img src="./image/penta-apartments-logo.png" alt="alfinio-villa-logo" class="img-fluid" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="mt-4">
-        <div
-          class="d-flex flex-md-row flex-column justify-content-center align-items-center mb-2"
-        >
-          <div
-            class="d-flex flex-column align-items-center justify-content-center my-3 p-0"
-          >
-            <a class="col-8 penta-alfinio-link" href="./alfinio/alfinio.html">
-              <img
-                class="col-12 border border-3 border-light img-round-border"
-                src="./images/alfinio/home.jpeg"
-                alt="Alfinio Villa"
-              />
-            </a>
-            <img
-              class="abs-images col-3 border-2 img-round-border"
-              src="./images/alfinio/alfinio.jpg"
-              alt="Alfinio"
-            />
-          </div>
-          <div
-            class="d-flex flex-column align-items-center justify-content-center my-3 p-0"
-          >
-            <a class="col-8 penta-alfinio-link" href="./penta/penta.html">
-              <img
-                class="col-12 border border-3 img-round-border border-light"
-                src="./images/penta/home.jpeg"
-                alt="Penta Apartments"
-              />
-            </a>
-            <img
-              class="abs-images col-3 border-2 img-round-border"
-              src="./images/penta/penta.jpg"
-              alt="Penta"
-            />
-          </div>
-        </div>
-      </section>
-    </div>
-    <script src="./packages/bootstrap.bundle.min.js"></script>
+      </div>
+      <!-- main content part html ens -->
+    </section>
+    <!-- welcome page part end -->
+    <!-- jquery js   -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap js   -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
