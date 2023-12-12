@@ -6,12 +6,12 @@ if(!isset($_POST['submit']))
 }
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
-$numar_adulti = $_POST['numar_adulti'];
-$numar_copii = $_POST['numar_copii'];
-$check_in = $_POST['check_in'];
-$check_out = $_POST['check_out'];
+$numar_adulti = $_POST['adults'];
+$numar_copii = $_POST['children'];
+$check_in = $_POST['checkin'];
+$check_out = $_POST['checkout'];
 
-$telefon = $_POST['telefon'];
+$telefon = $_POST['tel'];
 
 $message = $_POST['message'];
 
@@ -37,12 +37,13 @@ $email_body = "User: $name.\n".
     "Numar adulti: $numar_adulti.\n".
     "Numar copii: $numar_copii.\n".
     "Telefon: $telefon.\n".
-    "Message: $message.\n".
+    "Message: $message.\n";
+
 
 
     
-$to = "myalfinio@gmail.com";//<== update the email address
-// $to = "filipcezariu@gmail.com";//<== update the email address
+// $to = "myalfinio@gmail.com";//<== update the email address
+$to = "filipcezariu@gmail.com";//<== update the email address
 
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
