@@ -3,7 +3,7 @@ $(document).ready(function () {
     loop: true,
     margin: 10,
     responsiveClass: true,
-    autoplay:true,
+    autoplay: true,
     smartSpeed: 1500,
     // autoplayTimeout: 6000,
     responsive: {
@@ -44,7 +44,7 @@ $(document).ready(function () {
         loop: true,
       },
     },
-    
+
   });
   // Third carousel
   $("#owl-carousel3").owlCarousel({
@@ -74,7 +74,7 @@ $(document).ready(function () {
         loop: true,
       },
     },
-    
+
   });
 });
 
@@ -121,3 +121,4 @@ function closeSocialIcons(e) {
     icons.classList.remove("d-none");
   }
 }
+
