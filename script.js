@@ -1,11 +1,11 @@
 $(document).ready(function () {
-  $("#owl-carousel1").owlCarousel({
+  const owl1 = $("#owl-carousel1");
+  owl1.owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
     autoplay: true,
     smartSpeed: 1500,
-    // autoplayTimeout: 6000,
     responsive: {
       0: {
         items: 1,
@@ -26,8 +26,20 @@ $(document).ready(function () {
     },
   });
 
+  $("#forward1").click(function () {
+    owl1.trigger("next.owl.carousel");
+    owl1.trigger("stop.owl.autoplay");
+    owl1.trigger("play.owl.autoplay");
+  });
+  $("#backward1").click(function () {
+    owl1.trigger("prev.owl.carousel");
+    owl1.trigger("stop.owl.autoplay");
+    owl1.trigger("play.owl.autoplay");
+  });
+
   // Second carousel
-  $("#owl-carousel2").owlCarousel({
+  const owl2 = $("#owl-carousel2");
+  owl2.owlCarousel({
     loop: true,
     margin: 20,
     responsiveClass: true,
@@ -44,8 +56,18 @@ $(document).ready(function () {
         loop: true,
       },
     },
-
   });
+  $("#forward2").click(function () {
+    owl2.trigger("next.owl.carousel");
+    owl2.trigger("stop.owl.autoplay");
+    owl2.trigger("play.owl.autoplay");
+  });
+  $("#backward2").click(function () {
+    owl2.trigger("prev.owl.carousel");
+    owl2.trigger("stop.owl.autoplay");
+    owl2.trigger("play.owl.autoplay");
+  });
+
   // Third carousel
   $("#owl-carousel3").owlCarousel({
     loop: true,
@@ -74,7 +96,6 @@ $(document).ready(function () {
         loop: true,
       },
     },
-
   });
 });
 
@@ -85,8 +106,11 @@ $(document).ready(function () {
 
 $(document).ready(sizeMap);
 
-window.addEventListener("resize", sizeMap);
+window.addEventListener("resize", changeSize);
 
+function changeSize() {
+  sizeMap();
+}
 function sizeMap() {
   $(".contact_map").css({
     height: $(".form-container").height() + "px",
@@ -121,4 +145,3 @@ function closeSocialIcons(e) {
     icons.classList.remove("d-none");
   }
 }
-

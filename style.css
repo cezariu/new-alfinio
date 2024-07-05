@@ -43,7 +43,6 @@ section {
   background-color: #a19393;
 }
 
-
 footer {
   margin-top: 75px;
   background-color: #e4e4e4;
@@ -337,4 +336,40 @@ footer {
 #tarife .child {
   max-width: 7px;
   align-self: flex-end;
+}
+
+@media screen and (min-width: 640px) {
+  #next-prev-btns #forward2,
+  #next-prev-btns #backward2 {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 767px) {
+  #next-prev-btns #forward1,
+  #next-prev-btns #backward1 {
+    display: none !important;
+  }
+}
+
+#next-prev-btns {
+  position: relative;
+}
+
+#next-prev-btns .forward {
+  right: 15px;
+}
+
+#next-prev-btns .backward {
+  left: 15px;
+}
+
+#next-prev-btns span {
+  z-index: 1000;
+  top: 38%;
+  border-radius: 5px;
+  position: absolute;
+}
+
+#next-prev-btns span:hover {
+  background-color: #acacac75;
 }

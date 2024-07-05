@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to Alfinio VIlla & Penta Apartments</title>
+  <title>Welcome to Alfinio & Penta </title>
   <!-- Poppins google font  -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap"
     rel="stylesheet" />
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <!-- custom css  link  -->
   <link rel="stylesheet" href="./css/style.css" />
-	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
 </head>
 
 <body>
@@ -21,25 +21,28 @@
     <!-- desktop menu  -->
     <div class="nav-content position-absolute d-none d-lg-block">
       <ul class="d-flex flex-lg-column p-0 m-0 h-100 align-items-center">
-        <li class="mx-4 mx-lg-0 mt-lg-4"><a class="fw-normal text-white d-flex"  href="#" style="font-size: 14px;">LinkedIn</a></li>
-        <li class="mx-4 mx-lg-0 mt-lg-4"><a class="fw-normal text-white d-flex"  href="#" style="font-size: 14px;">Instagram</a></li>
-        
+        <li class="mx-4 mx-lg-0 mt-lg-4"><a class="fw-normal text-white d-flex" href="#"
+            style="font-size: 14px;">LinkedIn</a></li>
+        <li class="mx-4 mx-lg-0 mt-lg-4"><a class="fw-normal text-white d-flex" href="#"
+            style="font-size: 14px;">Instagram</a></li>
+
 
 
         <!-- <li class="mx-4 mx-lg-0 mt-lg-4"><a class="fw-normal text-white d-flex" href="tel:+40722326694" style="font-size:16px">+40 722 326 694</a></li> -->
         <li class="mx-4 mx-lg-0 flex-fill"><a class="fw-normal text-white d-flex pe-lg-4" href="#"></a></li>
         <li class="d-flex">
-          <a class="fw-normal text-white d-flex align-items-center" href="tel:+40722326694" style="font-size:14px">0722 326 694</a>
+          <a class="fw-normal text-white d-flex align-items-center" href="tel:+40722326694" style="font-size:14px">0722
+            326 694</a>
           <!-- <a class="fw-normal text-white d-flex align-items-center" href="#" style="font-size: 16px;">LinkedIn</a> -->
         </li>
-          <li class="d-flex">
+        <li class="d-flex">
         </li>
       </ul>
     </div>
     <!-- mobile menu  -->
     <div class="nav-content-mobile border-bottom position-absolute w-100 d-block d-lg-none">
       <ul class="p-0 m-0 align-items-center d-flex align-items-center h-100">
-        <li class="mr-2"><a class="pr-3 fw-normal text-white" href="#">LinkedIn</a></li>
+        <li class="mr-2"><a class="pr-3 fw-normal text-white" href="#">Facebook</a></li>
         <li class="mx-2 flex-fill"><a class="px-3 fw-normal text-white" href="#">Instagram</a></li>
         <li style="padding-right: 10px;">
           <!-- <a class="fw-normal text-white d-flex" href="tel:+40722326694"> +40 722 326 694</a> -->
@@ -54,18 +57,58 @@
         </li>
       </ul>
     </div>
+
+    <style>
+      @media screen and (min-width: 800px) {
+        .dontDisplayPC {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 799px) {
+        .dontDisplayMobile {
+          display: none;
+        }
+      }
+
+      h1{
+        font-size: 34px;
+      }
+
+      h2{
+        font-size: 15px;
+      }
+    </style>
+
     <!-- main content part html start -->
     <div class="main-content position-relative h-100">
       <div class="main-content-item align-items-lg-center h-100 d-flex">
+
         <div class="row m-auto align-items-center">
-          <div class="col-md-12 col-lg-6">
+          <div class="col-md-12 col-lg-6 ">
             <div class="main-content-text mb-md-5 mb-lg-0 pt-4 pt-md-0">
-              <h1 class="mb-md-4 mb-lg-3" style="text-align: center; font-family: 'Audiowide';">Welcome to</h1>
-              <h2 class="mb-md-4 mb-lg-3" style="text-align: center; font-family: 'Audiowide';">Alfinio villa  &#160 &  &#160 PENTA apartments</h2>
-              <p class="text-white pb-md-5 pb-lg-0" style="text-align: center; ">Windows to the peace and beauty of nature, where time stands still
-                and the soul finds itself in harmony.</p>
+              <div class="dontDisplayMobile">
+                <h1 class="mb-md-4 mb-lg-3" style="font-family: 'Audiowide'; ">Welcome to</h1>
+                <h2 class="mb-md-4 mb-lg-3" style="font-family: 'Audiowide';">Alfinio &#160 & &#160 PENTA</h2>
+                <p class="text-white pb-md-5 pb-lg-0" style="font-size: 15px;">Windows to the peace and beauty of
+                  nature,
+                  where time stands still
+                  and the soul finds itself in harmony.</p>
+              </div>
+
+              <div class="dontDisplayPC " style="margin-top: -80px !important;">
+                <h1 class="mb-md-4 mb-lg-3" style="font-family: 'Audiowide';text-align: center;">Welcome to</h1>
+                <h2 class="mb-md-4 mb-lg-3" style="font-family: 'Audiowide';text-align: center;">Alfinio &#160 & &#160
+                  PENTA</h2>
+                <p class="text-white pb-md-5 pb-lg-0" style="font-size: 16px;text-align: center;">Windows to the peace
+                  and beauty of
+                  nature, where time stands still
+                  and the soul finds itself in harmony.</p>
+              </div>
+
             </div>
           </div>
+
           <div class="col-md-12 col-lg-6">
             <div class="villa-option text-center">
               <div class="alfinio villa-option-item mb-md-4 mb-5">
